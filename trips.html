@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta content='text/html;charset=utf-8'/>
+		<title>Trips</title>
+		<link rel="shortcut icon" type="image" href="logo.png">
+		<link type="text/css" rel="stylesheet"href="trips.css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<div class="BT-container">
+			<nav>
+				<div class="nav-bar">
+					<h1 class="title">WEBSITE NAME</h1>
+					<ul class="topnav">
+						<li><a href ="home-admin.html">Home</a></li>
+						<li><a href ="trips.html">Trips</a></li>
+						<li><a href ="schedules.html">Schedules</a></li>
+						<li><a href ="promos.html">Promos</a></li>
+					</ul>
+					<button type="submit" class="btn"><i class="fas fa-user-alt"></i></button>
+				</div>
+			</nav>
+			<div class="trip-entry">
+				<h2>Click the add button to enter the bus trip entry.</h2>
+			</div>	
+			<div class="trip-table">
+					<table class="content-table" border="2">
+						<thead>
+							<tr>
+								<th>Bus No. </th>
+								<th>From </th>
+								<th>To</th>
+								<th>Departure Time</th>
+								<th>Departure Date </th>
+								<th>Bus Type</th>
+								<th>No. of Seats </th>
+								<th>Price </th>
+								<th>Status</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>								
+									<select type="text" name="from" placeholder="From">
+										<option>--</option>
+										<option></option>
+										<option></option>
+									</select>
+								</td>
+								<td>								
+									<select type="text" name="from" placeholder="From">
+										<option>--</option>
+										<option></option>
+										<option></option>
+									</select>
+								</td>
+								<td>								
+									<select type="text" name="from" placeholder="From">
+										<option>--</option>
+										<option></option>
+										<option></option>
+									</select>
+								</td>
+								<td>								
+									<select type="text" name="from" placeholder="From">
+										<option>--</option>
+										<option></option>
+										<option></option>
+									</select>
+								</td>
+								<td>								
+									<select type="text" name="from" placeholder="From">
+										<option>--</option>
+										<option></option>
+										<option></option>
+									</select>
+								</td>
+								<td>								
+									<select type="text" name="from" placeholder="From">
+										<option>--</option>
+										<option></option>
+										<option></option>
+									</select>
+								</td>
+								<td>								
+									<select type="text" name="from" placeholder="From">
+										<option>--</option>
+										<option></option>
+										<option></option>
+									</select>
+								</td>
+								<td>								
+									<select type="text" name="from" placeholder="From">
+										<option>--</option>
+										<option></option>
+										<option></option>
+									</select>
+								</td>
+								<td>								
+									<select type="text" name="from" placeholder="From">
+										<option>--</option>
+										<option></option>
+										<option></option>
+									</select>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<button type="submit" class="remove">Remove</button>
+				<div class="box">
+					<button type="submit" onClick="add()" class="add">Add</button>
+					<form action ="" id="form">
+						<div class="first">
+							<label>Bus No.:</label>
+							<input type="text" name="bus-no." placeholder="">
+							<label>From.:</label>
+							<input type="text" name="from" placeholder="">
+							<label>To:</label>
+							<input type="text" name="To" placeholder="">
+							<label>Bus Type.:</label>	
+							<select type="text" name="Bus type" placeholder="">
+										<option>--</option>
+										<option></option>
+										<option></option>
+							</select>
+						</div>
+						<div class="first">
+							<label>Departure Time.:</label>
+							<input type="timet" name="Time" placeholder="">
+							<label>Departure Date.:</label>
+							<input type="date" name="D-date" placeholder="">
+							<label>No. of seats:</label>
+							<input type="text" name="seats" placeholder="">
+							<label>Price.:</label>
+							<input type="text" name="Price" placeholder="">
+						</div>
+						<div class="bottom-btn">
+							<button type="submit" class="enter">Enter</button>
+							<button type="submit" class="cancel">Cancel</button>
+						</div>	
+					</form>
+					<script type="text/javascript">
+						function add(){
+							document.getElementById("form").style.display = "block";
+						}
+					</script>
+				</div>
+		</div>
+			<div id="footer">
+				<img src="logo.png">
+				<i>Copyright &copy; 2023</i>
+			</div>
+	<script src="trips.js"></script>
+	</body>
+</html>

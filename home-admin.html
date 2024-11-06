@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta content='text/html;charset=utf-8'/>
+		<title>Home</title>
+		<link rel="shortcut icon" type="image" href="logo.png">
+		<link type="text/css" rel="stylesheet"href="home-admin.css"/>
+		<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.js"></script>
+	</head>
+	<body>
+		<div class="BT-container">
+			<nav>
+				<div class="nav-bar">
+					<h1 class="title">WEBSITE NAME</h1>
+					<ul class="topnav">
+						<li><a class="active" href ="home-admin.html">Home</a></li>
+						<li><a href ="trips.html">Trips</a></li>
+						<li><a href ="schedules.html">Schedules</a></li>
+						<li><a href ="promos.html">Promos</a></li>				
+					</ul>
+					<button type="submit" class="btn"><i class="fas fa-user-alt"></i></button>
+				</div>
+			</nav>
+			
+			<div class="bus-quote">
+				<div class="quote">	
+				</div>
+				<div class="bus">
+				</div>
+			</div>
+		</div>
+		<div class="choices">
+			<div class="buy-ticket">
+				<i class="fa-solid fa-ticket"></i>
+				<label id="buyticket" type="submit"><a href="BuyTicket.html">Buy Ticket</a></label>
+			</div>
+			<div class="schedule">
+				<i class="fa fa-calendar"></i>
+				<label id="buyticket" type="submit"><a href="schedules.html">Schedule</a></label>
+			</div>
+			<div class="trips">
+				<i class="fas fa-bus-alt"></i>
+				<label id="buyticket" type="submit"><a href="trips.html">Trips</a></label>
+			</div>
+		</div>
+		<div class="insights">
+			<div class="top">
+				<h2>Monthly Insights</h2><h3>View More ></h3>
+				<label type="submit"><a href="viewmore.html">View more</a></label>
+			</div>
+			<div class="inside">
+				<div class="chart">
+					<canvas id="myChart" style="width: 900px; height: 400px;"></canvas>
+				</div>
+				<div class="box">
+					<label>Ticket Sold</label>
+					<label>Cancelled</label>
+					<label>Reschedule</label>
+				</div>
+			</div>
+		</div>
+			<div id="footer">
+				<img src="logo.png">
+				<i>Copyright &copy; 2023</i>
+			</div>
+		<script>
+			let labels =[];
+			
+			let itemData = [];
+			
+			const data = {
+				labels: labels,
+				datasets: [{
+					data: itemData
+				}]
+			};
+			
+			const config ={
+				type = 'line';
+				data: data;
+				options: {
+					plugins: {
+						legend: {
+							display: false
+						},
+						title: {
+							display: true,
+							text: 'Monthly Insights'
+						}
+					}
+				}
+			};
+		</script>
+	</body>
+</html>

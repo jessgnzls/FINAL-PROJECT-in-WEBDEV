@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta content='text/html;charset=utf-8'/>
+		<title>Home</title>
+		<link rel="shortcut icon" type="image" href="logo.png">
+		<link type="text/css" rel="stylesheet"href="home-nli.css"/>
+		<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<div class="BT-container">
+			<nav>
+				<div class="nav-bar">
+					<h1 class="title">WEBSITE NAME</h1>
+					<ul class="topnav">
+						<li><a class="active" href ="home.html">Home</a></li>
+						<li><a href ="trips.html">Trips</a></li>
+						<li><a href ="schedules.html">Schedules</a></li>
+						<li><a href ="AboutUs.html">About Us</a></li>
+						<li><a class="only" href ="LoginForm.html">Log in</a></li>
+						<li><a class="only" href ="register.html" style="">Register</a></li>				
+					</ul>
+				</div>
+			</nav>
+			
+			<div class="bus-quote">
+				<div class="quote">	
+				</div>
+				<div class="bus">
+				</div>
+			</div>
+		</div>
+		<div class="Bus-trips">
+			<div class="select">
+				<div class="select-trips">
+					<label>From:</label>
+					<select type="text" name="from" placeholder="From">
+						<option>--</option>
+						<option></option>
+						<option></option>
+					</select>
+				</div>	
+				<div class="select-trips">
+					<label>To:</label>
+					<select type="text" name="to" placeholder="To">
+						<option>--</option>
+						<option></option>
+						<option></option>
+					</select>
+				</div>
+				<div class="select-trips">
+					<label>Date:</label>
+					<input type="date" name="from" placeholder="From">
+				</div>
+				<button type="submit" class="book">Book</button><br>
+			</div>
+		</div>
+		<div class="choices">
+			<div class="BST">
+				<div class="buy-ticket">
+					<i class="fa-solid fa-ticket"></i>
+					<label id="buyticket" type="submit"><a href="BuyTicket.html">Buy Ticket</a></label>
+				</div>
+				<div class="schedule">
+					<i class="fa fa-calendar"></i>
+					<label id="buyticket" type="submit"><a href="schedules.html">Schedule</a></label>
+				</div>
+				<div class="trip">
+					<i class="fas fa-bus-alt"></i>
+					<label id="buyticket" type="submit"><a href="trips.html">Trips</a></label>
+				</div>
+			</div>
+		</div>
+		<div class="promo">
+			<h2>Promos and Discounts</h2>
+			<div class="promo-pic" id="imgBox">
+				<div class="p-container">
+					<input type="file" accept="image/*" name="image" id="file" style="display:none" onchange="loadFile(event)">
+					<label for="file"><i class="fas fa-upload"></i></label><br>
+					<input id="textBox"type="text" name="description" placeholder="description">
+				</div>
+				<div class="p-container">
+					<input type="file" accept="image/*" name="image" id="file" style="display:none" onchange="loadFile(event)">
+					<label for="file"><i class="fas fa-upload"></i></label><br>
+					<input id="textBox"type="text" name="description" placeholder="description">
+				</div>
+				<div class="p-container">
+					<input type="file" accept="image/*" name="image" id="file" style="display:none" onchange="loadFile(event)">
+					<label for="file"><i class="fas fa-upload"></i></label><br>
+					<input id="textBox"type="text" name="description" placeholder="description">
+				</div>
+			</div>
+		</div>
+		
+			<div id="footer">
+				<img src="logo.png">
+				<i>Copyright &copy; 2023</i>
+			</div>
+
+		</div>
+	</body>
+</html>

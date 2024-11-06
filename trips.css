@@ -1,0 +1,224 @@
+body{
+    background-image: url(trips_bg.png);
+	background-size: cover;
+	background-position:center;
+	background-repeat: no-repeat;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+	font-family: Arial;
+}
+.nav-bar{
+	background:  #FF5050;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0px 50px;
+}
+.topnav li{
+	list-style: none;
+	display: inline-block;
+}
+.topnav li :hover{
+	color: #FF5050;
+	float: left;
+	font-size: 27px;
+	font-weight: 600;
+	transition: .3s ease;
+	background-color: white;
+	padding: 8px 30px;
+	border: 2px solid #fff;
+	border-radius: 10px;
+}
+.topnav li a{
+	text-decoration: none;
+	float: left;
+	color: white;
+	font-size: 25px;
+	font-weight: 600;
+	margin-left: 30px;
+}
+
+.title{
+	color: white;
+}
+.btn {
+  background-color:  #FF5050 ;
+  border-radius: 50%;
+  border: 2px solid white;
+  color: white; 
+  padding: 12px 16px; 
+  font-size: 16px; 
+  cursor: pointer; 
+  margin: none;
+}
+#footer{
+	background:  #AEAAAA;
+	height: 50px;
+	margin-top: 230px;
+	padding-top:20px;
+	color: white;
+	text-align: center;
+}
+#footer i{
+
+	font-style: italic;
+	align-items: center;
+}
+#footer img{
+	margin-left: 15px;
+	margin-bottom: 15px;
+	float: left;
+	width: 60px;
+	padding: 0px;
+}
+h2{
+	margin-left: 30px;
+	font-size: 20px;
+    padding: 15px 15px 0px;
+    color: #AEAAAA;
+}
+button{
+	display: flex;
+	justify-content: space-between;
+}
+.add{
+  background-color:  #FF5050 ;
+  border: 2px solid white;
+  color: white; 
+  padding: 12px 16px; 
+  font-size: 16px; 
+  cursor: pointer; 
+  padding: 10px 30px;
+	margin-right:20px;
+	float: right;
+}
+.remove{
+	background-color:  #AEAAAA;
+  border: 2px solid white;
+  color: white; 
+  padding: 12px 16px; 
+  font-size: 16px; 
+  cursor: pointer; 
+  padding: 10px 30px;
+	margin-right:35px;
+	float: right;
+}
+table1{
+	border: 2px solid #FF5050 ;
+	align-items: center;
+	margin: auto;
+}
+table 1tr1{
+	border: 2px solid #FF5050 ;
+}
+.trip-entry{
+	margin: auto;
+	padding-bottom: 30px;
+}
+.content-table {
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+	margin-left: 40px;
+	border: 2px solid #FF5050	
+}
+
+.content-table thead tr {
+    background-color: #FF5050;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+    padding: 12px 30px;
+}
+.content-table td,
+.content-table tr {
+	padding: 12px 30px;
+}
+.content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #FF5050;
+}
+.content-table select{
+    text-align: left;
+    font-weight: bold;
+	padding: 5px 15px;
+}
+.box #form {
+	width: 150px;
+	height: 40vh;
+    border: 2px solid  #FF5050;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px gray;
+	width: 90%;
+	margin-top: 20px;
+	margin-left: 70px;
+   background: #fff;
+   flex-direction: column;
+	display:none;
+}
+.box .first{
+	display: flex;
+	align-items: center;
+}
+#form {
+	display: flex;
+	flex-direction:row;
+	margin-left: 80px;
+}
+.first{
+	margin-top: 40px;
+}
+.first select{
+	display: block;
+	border: 2px solid  #FF5050;
+	width: 180px;
+	padding: 10px;
+	border-radius: 5px;
+	margin-right: 50px;
+}
+.first input{
+	display: block;
+	border: 2px solid  #FF5050;
+	width: 180px;
+	padding: 10px;
+	border-radius: 5px;
+	margin-right: 30px;
+}
+.first label{
+	color: #AEAAAA;
+    font-size: 18px;
+    padding: 5px;
+}
+.bottom-btn{
+	display: flex;
+	padding: 10px;
+}
+.enter{
+	background-color: #FF5050;
+	border: 2px solid white;
+	color: white; 
+	padding: 12px 16px; 
+	font-size: 16px; 
+	cursor: pointer; 
+	padding: 10px 30px;
+	margin-left: 450px;
+}
+.cancel{
+	background-color:  #AEAAAA;
+	border: 2px solid white;
+	color: white; 
+	padding: 12px 16px; 
+	font-size: 16px; 
+	cursor: pointer; 
+	padding: 10px 30px;
+	margin-left: 50px;
+}
+

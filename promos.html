@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta content='text/html;charset=utf-8'/>
+		<title>Promos</title>
+		<link rel="shortcut icon" type="image" href="logo.png">
+		<link type="text/css" rel="stylesheet"href="promo.css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<div class="BT-container">
+			<nav>
+				<div class="nav-bar">
+					<h1 class="title">WEBSITE NAME</h1>
+					<ul class="topnav">
+						<li><a href ="home-admin.html">Home</a></li>
+						<li><a href ="trips.html">Trips</a></li>
+						<li><a href ="schedules.html">Schedules</a></li>
+						<li><a href ="promos.html">Promos</a></li>
+					</ul>
+					<button type="submit" class="btn"><i class="fas fa-user-alt"></i></button>
+				</div>
+			</nav>
+			<div class="promos">
+				<div class="choose-promo">
+					<h2>Special Promo</h2>
+					<div class="select-promo">
+						<div class="promo-pic" id="imgBox">
+							<div class="p-container">
+								<input type="file" accept="image/*" name="image" id="file" style="display:none" onchange="loadFile(event)">
+								<label for="file"><i class="fas fa-upload"></i></label><br>
+								<div id="prevText"></div>
+								<input id="textBox"type="text" name="description" placeholder="description">
+							</div>
+						</div>
+						<div class="promo-pic" id="imgBox">
+							<div class="p-container">
+								<input type="file" accept="image/*" name="image" id="file" style="display:none" onchange="loadFile(event)">
+								<label for="file"><i class="fas fa-upload"></i></label><br>
+								<div id="prevText"></div>
+								<input id="textBox"type="text" name="description" placeholder="description">
+							</div>
+						</div>
+					</div>
+					<h2>Holiday Promo</h2>
+					<div class="select-promo">
+						<div class="promo-pic" id="imgBox">
+							<div class="p-container">
+								<input type="file" accept="image/*" name="image" id="file" style="display:none" onchange="loadFile(event)">
+								<label for="file"><i class="fas fa-upload"></i></label><br>
+								<div id="prevText"></div>
+								<input id="textBox"type="text" name="description" placeholder="description">
+							</div>
+						</div>
+						<div class="promo-pic" id="imgBox">
+							<div class="p-container">
+								<input type="file" accept="image/*" name="image" id="file" style="display:none" onchange="loadFile(event)">
+								<label for="file"><i class="fas fa-upload"></i></label><br>
+								<div id="prevText"></div>
+								<input id="textBox"type="text" name="description" placeholder="description">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="promo">
+					<div class="promo-details">
+						<label>Promo Name:</label>
+						<input type="text" name="Promo Name" placeholder="">
+					</div>
+					<div class="promo-details">
+						<label>Category:</label>
+						<input type="text" name="Category" placeholder="">
+					</div>
+					<div class="promo-details">
+						<label>Promo Description:</label>
+						<input type="text" name="Promo Description" placeholder="">
+					</div>
+					<button id="Enter" type="button">Enter</button><br>
+					<button id="Remove" type="button">Remove</button>
+				</div>
+			</div>
+		</div>
+		
+			<div id="footer">
+				<img src="logo.png">
+				<i>Copyright &copy; 2023</i>
+			</div>
+
+		</div>
+		<script>
+		var textBox = document.getElementById("textBox");
+		var imgBox = document.getElementById("imgBox");
+		
+		textBox.onkeyup =textBox.onkeypress = function(){
+			document.getElementById("prevText").innerHTML = this.value;
+		}
+		var loadFile = function(event){
+			imgBox.style.backgroundImage = "url(" +URL.createObjectURL(event.target.files[0]) + ")";
+		}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta content='text/html;charset=utf-8'/>
+		<title>Buy Ticket</title>
+		<link rel="shortcut icon" type="image" href="logo.png">
+		<link type="text/css" rel="stylesheet"href="webstyle.css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+	</head>
+	<body>
+		<div class="BT-container">
+			<nav>
+				<div class="nav-bar">
+					<h1 class="title">WEBSITE NAME</h1>
+					<ul class="topnav">
+						<li><a href ="home-user.html">Home</a></li>
+						<li><a href ="BuyTicket.html">Buy Ticket</a></li>
+						<li><a href ="bus-schedules.html">Schedules</a></li>
+						<li><a href ="AboutUs.html">About Us</a></li>
+					</ul>
+					<button type="submit" class="btn"><i class="fas fa-user-alt"></i></button>
+				</div>
+			</nav>
+			<div class="process">
+				<i1><a href= "buy.html">1. Buy</a></i1>
+				<li><a href= "confirmation.html">2. Confirmation</a></li>
+				<li><a href= "payment.html">3. Payment</a></li>
+				<li><a href= "buy.html">4. Ticket</a></li>				
+			</div>
+			<div class="fill-up">
+				<h2>TICKET</h2>
+				<form action="confirmation.html">
+					<div class="fill">
+						<div class="destination">
+							<div class="input-destination">
+								<label>From:</label>
+								<select type="text" name="from" placeholder="From">
+									<option>--</option>
+									<option></option>
+										<option></option>
+								</select>
+							</div>	
+							<div class="input-destination">
+								<label>To:</label>
+								<select type="text" name="to" placeholder="To">
+									<option>--</option>
+									<option></option>
+									<option></option>
+								</select>
+							</div>
+						</div>
+						<div class="date-time">
+							<div class="input-DT">
+								<label>Departure Date:</label>
+								<input type="date" name="from" placeholder="From">
+							</div>
+							<div class="input-DT">
+								<label>Departure Time:</label>
+								<input type="time" name="from" placeholder="From">
+							</div>
+						</div>
+						<div class="BT-NT">
+							<div class="input-BTNT">
+								<label>Bus type:</label>
+								<select type="text" name="bus_type" placeholder="bustype">
+									<option>--</option>
+									<option></option>
+									<option></option>
+								</select>
+							</div>
+							<div class="input-BTNT">
+								<label>No. of Tickets:</label>
+								<input type="text" name="ntickets" placeholder="No. of Tickets">
+							</div>
+						</div>
+					
+						<div class="Bus-num">
+							<label>Bus number:</label>
+							<input type="text" name="Bus_number" placeholder=""><br>
+						</div>
+						<div class="price">
+							<div class="input-price">
+								<label>Ticket Price:</label>
+								<div id="t-price">
+									<h3>Php</h3><input type="text" name="ntickets" placeholder="No. of Tickets">
+								</div>
+							</div>
+							<div class="input-price">
+								<label>Total:</label>
+								<div id="t-price">
+									<h3>Php</h3><input type="text" name="ntickets" placeholder="No. of Tickets">
+								</div>
+							</div>
+						</div>
+						<button id="Next" type="submit"><a href="confirmation.html" class="fp">NEXT</a></button>
+					</div>
+				</form>
+			</div>
+			<div id="footer">
+				<img src="logo.png">
+				<i>Copyright &copy; 2023</i>
+			</div>
+
+		</div>
+	</body>
+</html>
